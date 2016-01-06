@@ -3,18 +3,10 @@ import java.io.InputStreamReader;
 import java.io.PrintWriter;
 import java.util.Arrays;
 import java.io.IOException;
-/*
-* Given the list of numbers, you are to sort them in non decreasing order.
-*
-* Input
-*
-* t – the number of numbers in list, then t lines follow [t <= 10^6].
-* Each line contains one integer: N [0 <= N <= 10^6]
-*
-* Output
-*
-* Output given numbers in non decreasing order.
-*/
+
+/**
+ * Problem https://www.codechef.com/problems/TSORT
+ */
 class TurboSort {
     public static void main(String[] args) throws IOException {
         BufferedReader sc = new BufferedReader(new InputStreamReader(System.in));
