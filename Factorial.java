@@ -17,7 +17,7 @@ class Factorial {
                     int fives = 0;
                     int m = 5;
                     do {
-                        fives = fives + (int)(factNumber/m);
+                        fives = fives + (factNumber/m);
                         m = m*5;
                     } while (m <= factNumber);
                     result.add(fives);
