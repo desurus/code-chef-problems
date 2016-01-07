@@ -1,6 +1,4 @@
 import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * Problem https://www.codechef.com/problems/PERMUT2
