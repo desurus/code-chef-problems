@@ -1,4 +1,5 @@
-import java.lang.Character;
+package info.desurus;
+
 import java.lang.Integer;
 import java.lang.String;
 import java.util.*;
@@ -9,7 +10,7 @@ import java.util.*;
 class CielRcpt {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int priceList[] = {1,2,4,8,16,32,64,128,256,512,1024,2048};
+        int[] priceList = {1,2,4,8,16,32,64,128,256,512,1024,2048};
         if (sc.hasNextInt()) {
             int n = sc.nextInt();
             List<Integer> result = new ArrayList<Integer>();
@@ -30,7 +31,9 @@ class CielRcpt {
                                     break;
                                 }
                             }
+                            System.out.println(i);
                             inputNumber = inputNumber - priceList[i - 1];
+                            System.out.println("Input number: " + inputNumber);
                             count++;
                         }
                     }

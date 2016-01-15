@@ -1,3 +1,5 @@
+package info.desurus;
+
 import java.util.Scanner;
 
 /**
