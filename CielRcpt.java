@@ -21,20 +21,23 @@ class CielRcpt {
                     int inputNumber = sc.nextInt();
                     int originalInput = inputNumber;
                     int count = 0;
+                    for (i = 0; i < 11; i++ ) {
+                        if (priceList[i] > originalInput) {
+                            break;
+                        }
+                    }
                     while (inputNumber > 0) {
-                        if (inputNumber > priceList[11]) {
+                        if (inputNumber >= priceList[11]) {
                             inputNumber = inputNumber - priceList[11];
                             count++;
                         } else {
-                            for (i = 0; i < 12; i++ ) {
-                                if (priceList[i] > originalInput) {
-                                    break;
-                                }
+                            if (i > 0 && priceList[i - 1] > inputNumber) {
+                                i--;
+                                continue;
                             }
-                            System.out.println(i);
                             inputNumber = inputNumber - priceList[i - 1];
-                            System.out.println("Input number: " + inputNumber);
                             count++;
+                            i--;
                         }
                     }
                     result.add(count);
