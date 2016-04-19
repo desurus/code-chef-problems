@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 /**
  * Problem https://www.codechef.com/problems/HS08TEST
+ * some random test change
  */
 class ATM {
     public static void main(String[] args)
